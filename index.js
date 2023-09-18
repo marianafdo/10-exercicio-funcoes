@@ -14,55 +14,52 @@
 // ii) true
 // iii) false
 
-function receberDados(nome, idade, cidade, profissao){
-    nome = "Mariana";
-    idade = 32;
-    cidade = "São Leopoldo";
-    profissao = "empresária";
-    return frase = `Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`;
+// Escrita de código.
+// 1.
+
+function sobreMim(){
+    console.log('Eu sou Mariana, tenho 32 anos, moro em São Leopoldo e sou empresária');
 }
 
-function imprimirFrase(){
-    console.log(frase);
+function receberDados (nome, idade, cidade, profissao){
+      console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`);
 }
 
-receberDados();
-imprimirFrase()
+sobreMim();
+receberDados('Mariana', 32, 'São Leopoldo', 'empresária');
 
+// 2.
+// a)
 function somarNumeros(primeiro, segundo) {
     let resultadoSoma = primeiro + segundo;
     return resultadoSoma;
 }
 
-somarNumeros();
 console.log(somarNumeros(45, 69));
 
+// b)
 function verificarSeEMaior(primeiro, segundo){
     return primeiro >= segundo;
 }
-verificarSeEMaior();
 console.log(verificarSeEMaior(65, 685));
 
-
+// c)
 function verificarSeEPar(numero){
     return Boolean(numero % 2 === 0);
 }
 
-verificarSeEPar();
 console.log(verificarSeEPar(70));
 
-
+// d)
 function verificarTamanho(fraseDoUsuario){
-    console.log(fraseDoUsuario.toUpperCase())
+    console.log(fraseDoUsuario.length, fraseDoUsuario.toUpperCase())
 }
 
 verificarTamanho("Bom dia a todos");
 
-
-let receberNumero = prompt("Insira um numero");
-let receberOutroNumero = prompt("Insira outro numero");
-let primeiroNumero = Number(receberNumero);
-let segundoNumero = Number(receberOutroNumero);
+// 3.
+let primeiroNumero = Number(prompt("Insira um numero"));
+let segundoNumero = Number(prompt("Insira outro numero"));
 
 function somar(primeiroNumero, segundoNumero){
 let soma = primeiroNumero + segundoNumero;
